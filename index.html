@@ -96,7 +96,7 @@
 					Introduction to Databases.</p>
 			</div>
 			<div class="image">
-				<img src="#" alt="" />
+				<img src="images/columbia.jpg" alt="" />
 			</div>
 		</section>
 
@@ -106,18 +106,21 @@
 			<div class="content">
 				<h2>Binary Neural Network</h2>
 				<h3>My First Computer Science Experience</h3>
-				<p>In Fall 2020, despite having little experience in computer science, Dr. Takamaeda-Yamazaki at The
-					University of Tokyo (Tokyo, Japan) welcomed me to study and learn about neural networks. For the
-					next year, I
-					worked with convolutional neural networks and also got experience in CUDA, UNIX, and
-					TensorFlow/PyTorch. I mainly researched Binary Neural Networks (BNN) and looked at how different
+				<p>In Fall 2020, I starting researching convolutional neural networks at The
+					University of Tokyo (Tokyo, Japan), while also getting my first experience in CUDA, UNIX, and
+					TensorFlow/PyTorch. I researched Binary Neural Networks (BNN) and looked at how different
 					network architectures can affect the efficiency and accuracy.</p>
-				<ul class="actions stacked">
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
+
+				<p>I developed a BNN that saves tensors
+					from the shallow part of the network, then applies a classifier on each saved tensor, and merges the
+					different predictions. This idea evolved from ResNet and skip connections, believeing that there are
+					benefits in keeping information learned in the shallower part of the network. Ultimately, I was able
+					to decrease parameters by 63% and 27% for CIFAR-10 and CIFAR-100, respectively, and yielded
+					accuracies of 90.72% and 67.65%. Despite using considerably less computations (about a third to a
+					half the size), my model was able to outperform similar BNN and IR-Net.</p>
 			</div>
-			<div class="image">
-				<img src="images/kyoto.jpg" alt="" />
+			<div class="image" style="object-fit: contain;">
+				<img src=" images/utokyo.png" alt="" />
 			</div>
 		</section>
 
