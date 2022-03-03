@@ -4904,36 +4904,32 @@ input, select, textarea {
 				object-position: center;
 				display: block;
 				position: absolute;
-				top: 0;
-				left: 0;
+				/* top: 0; */
+				/* left: 0; */
 				width: 100%;
 				height: 100%;
+				max-width: 100%;
+				max-height: 100%;
 				border-radius: 0;
 			}
 		
 		.spotlight.style1 .image.fit {
+			object-position: center;
+			flex-direction: row;
+			display: flex;
 			justify-content: center;
+			align-items: center;
+			
+			
 		}
 
 			.spotlight.style1 .image.fit img {
-				-moz-object-fit: cover;
-				-webkit-object-fit: cover;
-				-ms-object-fit: cover;
-				object-fit: cover;
-				-moz-object-position: center;
-				-webkit-object-position: center;
-				-ms-object-position: center;
-				object-position: center;
-				display: block;
-				position: absolute;
-				width: 100%;
+				width: auto;
 				height: auto;
+				min-width: 100%;
 				max-width: 100%;
-				max-height: auto;
-				top: 50%;
-				-ms-transform: translateY(-50%);
-  				transform: translateY(-50%);
-				border-radius: 0;
+				max-height: 100%;
+				align-self: center;
 			}
 
 		@media screen and (max-width: 1680px) {
